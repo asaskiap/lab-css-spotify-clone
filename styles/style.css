@@ -6,3 +6,211 @@ Green: #00B172
 White: #FFF
 
 */
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0 auto;
+    line-height: 2.5em;
+    letter-spacing: 0.1rem;
+    color: #1a1a1a;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#spotifyLogo {
+    max-height: 5rem;
+    /*margin-right: 30rem;*/
+}
+
+#dropDownMenu {
+    display: none;
+    color: rgb(48, 47, 47);
+    padding: 2rem 1rem 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#navButtonContainer {
+    margin-top: 2rem;
+}
+
+.navButton {
+    color: rgb(48, 47, 47);
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navButton:hover {
+    color: rgb(141, 140, 140);
+}
+
+#landingPage {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingHeader {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+#landingText {
+    text-align: center;
+    font-weight: 50;
+    font-size: 2rem;
+}
+
+#whatHeader h2 {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 3rem;
+}
+
+#what {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#what img {
+    max-width: 4rem;
+}
+
+#what div {
+    text-align: center;
+    max-width: 20rem;
+    font-size: 1.5rem;
+}
+
+#what div h3 {
+    color: #00b172;
+}
+
+#what div p {
+    color: gray;
+}
+
+#Kanye {
+    background-color: #00b172;
+    background-image: url(../images/spotify-icon-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    display: flex;
+    color: white;
+}
+
+#Kanye img {
+    max-width: 25rem;
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+#Kanye div {
+    max-width: 50rem;
+    margin: 5rem 4rem;
+    font-size: 1.3rem;
+    font-weight: 50;
+}
+
+#Kanye h2 {
+    margin: 4rem;
+    /*text-decoration: underline;*/
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+    text-underline-position: under;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#Kanye h3 {
+    font-size: 1.7rem;
+}
+
+#Kanye p {
+    max-width: 25rem;
+}
+
+@media (max-width: 1000px) {
+    .navButton {
+        display: none;
+    }
+    #navButtonContainer {
+        margin: 0rem 2rem 1rem 0rem;
+        max-width: 40%;
+    }
+    #navButtonContainer:hover .navButton {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar {
+        justify-content: space-between;
+    }
+    #spotifyLogo {
+        margin-right: 0;
+    }
+    #dropDownMenu {
+        display: block;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: rgb(48, 47, 47);
+    }
+    #navButtonContainer:hover #dropDownMenu {
+        display: none;
+    }
+    #landingHeader {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    #landingText {
+        font-size: 1.5rem;
+    }
+    #what {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    #whatHeader h2 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    #Kanye {
+        flex-direction: column;
+        background-size: 6rem;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    #Kanye h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    #Kanye text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #Kanye p {
+        margin-top: 0;
+        font-size: 0.9rem;
+        max-width: none;
+    }
+    #Kanye img {
+        margin-left: auto;
+    }
+}
